@@ -1,4 +1,5 @@
 import type { Route } from "./+types/home";
+import { Navbar } from "~/features/landing-page/navbar";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -8,5 +9,12 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <h1>Swiping</h1>;
+  return (
+    <div>
+      <Navbar />
+      <div>
+        <div>headline</div>
+      </div>
+    </div>
+  );
 }
